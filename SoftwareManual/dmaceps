@@ -15,20 +15,15 @@ better
 
     g++ -o dmaceps dmaceps.f
 
-**Description/Purpose:** This code is used to calculate the double precision error of a computer. Precision is the number of digits that a 
-computer can hold with out loss of accuracy due to finite storage. Double precision is the ability for a computer to allocate more memory
-and thus digits before failure due to acurracy.
+**Description/Purpose:** This code is used to calculate the double precision error of a computer. Precision is the number of digits that a computer can hold with out loss of accuracy due to finite storage. Double precision is the ability for a computer to allocate more memory and thus digits before failure due to acurracy.
 
-**Input:** The inputs are two numbers both passed by reference. The first, deps, is a double that holds the difference (AKA error)
-as the function iterates through to completion. The second variable, ipow, is an integer that represents how small the difference gets,
-that's to mean that it is iterated over, minimizing it until the differnce of the two numbers is indistinguable.
+**Input:** The inputs are two numbers both passed by reference. The first, deps, is a double that holds the difference (AKA error) as the function iterates through to completion. The second variable, ipow, is an integer that represents how small the difference gets, that's to mean that it is iterated over, minimizing it until the differnce of the two numbers is indistinguable.
 
-**Output:** There is no output for this code as all variables are passed by reference, but deps both and ipow are modified and updated
-to represent the minimum differnece and the correllating power by the completion of the function.
+**Output:** There is no output for this code as all variables are passed by reference, but deps both and ipow are modified and updated to represent the minimum differnece and the correllating power by the completion of the function.
 
 **Usage/Example:**
 dmaceps(deps,-1);
-printf("The output of dmaceps is:" seps);
+printf("The output of dmaceps is:" deps);
     Output: "5.92342336792E-16"
     
 This output means that there are 16 digits of precision until there is no guarentee of accuracy.

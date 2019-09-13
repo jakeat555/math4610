@@ -1,6 +1,6 @@
 # Math 4610 Software Manual Template File
 
-**Routine Name:** foo
+**Routine Name:** abserr
 
 **Author:** Jacob Johns
 
@@ -8,25 +8,35 @@
 
 For example,
 
-    g++ foo.f
+    g++ abserr.f
 
 will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
 better
 
-    g++ -o foo foo.f
+    g++ -o abserr abserr.f
 
-**Description/Purpose:** 
+**Description/Purpose:** This code is meant to evaluate the absolute error of two numbers, defined to be the absolute value of the difference of the two
 
-**Input:** 
+**Input:** The inputs for abserr one double, passed by refercence and  two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
+Input x and xe are the value and the estimated value respectivly.
 
-**Output:** 
+**Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from abserr
 
 **Usage/Example:**
 
+abserr(eps,1.1,1.001)
+printf("The absolute error is: %f",eps);
+    Output: "The absolute error is: .09"
+    
+abserr(eps,1.1,1.001)
+printf("The absolute error is: %f",eps);
+    Output: "The absolute error is: .009"
 
-
-**Implementation/Code:** The following is the code for foo()
-
+**Implementation/Code:** The following is the code for abserr()
+#include<cmath>
+void abserr(double &eps, double x, double xe){
+	eps = abs(x - xe);
+}
 
 
 **Last Modified:** September/2019

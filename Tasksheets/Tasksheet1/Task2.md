@@ -1,0 +1,3 @@
+I'm pretty sure it's private, and I'm pretty sure that you're already here but...
+
+My GitHub repository for MATH 4610 is [https://github.com/jakeat555/math4610](https://github.com/jakeat555/math4610)

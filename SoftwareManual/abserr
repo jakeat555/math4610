@@ -15,22 +15,22 @@ better
 
     g++ -o abserr abserr.f
 
-**Description/Purpose:** This code is meant to evaluate the absolute error of two numbers, defined to be the absolute value of the difference of the two
+**Description/Purpose:** This code is meant to evaluate the absolute error of two numbers, defined to be the absolute value of the difference of the two.
 
-**Input:** The inputs for abserr one double, passed by refercence and  two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
+**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
 Input x and xe are the value and the estimated value respectivly.
 
 **Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from abserr
 
 **Usage/Example:**
 
-abserr(eps,1.1,1.001)
+abserr(eps,1.1,1.01)
 printf("The absolute error is: %f",eps);
-    Output: "The absolute error is: .09"
+    Output: "The absolute error is: 0.09"
     
 abserr(eps,1.1,1.001)
 printf("The absolute error is: %f",eps);
-    Output: "The absolute error is: .009"
+    Output: "The absolute error is: .099"
 
 **Implementation/Code:** The following is the code for abserr()
 #include<cmath>

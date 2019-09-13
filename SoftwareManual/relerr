@@ -1,6 +1,6 @@
 # Math 4610 Software Manual Template File
 
-**Routine Name:** foo
+**Routine Name:** relerr
 
 **Author:** Jacob Johns
 
@@ -8,25 +8,36 @@
 
 For example,
 
-    g++ foo.f
+    g++ relerr.f
 
 will produce an executable **./a.exe** than can be executed. If you want a different name, the following will work a bit
 better
 
-    g++ -o foo foo.f
+    g++ -o relerr relerr.f
 
-**Description/Purpose:** 
+**Description/Purpose:** This is a function that provides the realitive error between an estimated and an actual value. This is defined as the absolute value of the difference of the two divided by the absolute value of the estimated value.
 
-**Input:** 
+**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
+Input x and xe are the value and the estimated value respectivly.
 
-**Output:** 
+**Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from relerr
 
 **Usage/Example:**
 
+relerr(eps,1.1,1.01)
+printf("The realitive error is: %f",eps);
+    Output: "The absolute error is: .0891"
+    
+relerr(eps,1.1,1.001)
+printf("The realitive error is: %f",eps);
+    Output: "The absolute error is: .0989010989"
 
 
-**Implementation/Code:** The following is the code for foo()
-
+**Implementation/Code:** The following is the code for relerr()
+#include<cmath>
+void relerr(double &eps, double x, double xe){
+	eps = std::abs(x - xe)/std::abs(xe);
+}
 
 
 **Last Modified:** September/2019

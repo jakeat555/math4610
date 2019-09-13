@@ -16,7 +16,7 @@ My GitHub repository for MATH 4610 is [https://github.com/jakeat555/math4610](ht
 
 The command line environment I will be using is Cygwin
 
-#Task 4
+#Task 4 (not done)
 
 The executible is [here](https://github.com/jakeat555/math4610/edit/master/Tasksheets/Tasksheet1/src/NameOfCode.exe)
 

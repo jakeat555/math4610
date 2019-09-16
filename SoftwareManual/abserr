@@ -17,10 +17,9 @@ better
 
 **Description/Purpose:** This code is meant to evaluate the absolute error of two numbers, defined to be the absolute value of the difference of the two.
 
-**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
-Input x and xe are the value and the estimated value respectivly.
+**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate. There is also an overwritten function that does performs the same operations on two floats passed in by refrence. Input x and xe are the value and the estimated value respectivly.
 
-**Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from abserr
+**Output:** There is no output as the variables eps and ipow are passed by refernce and thus carries all the relevant information gathered from abserr
 
 **Usage/Example:**
 
@@ -34,8 +33,11 @@ printf("The absolute error is: %f",eps);
 
 **Implementation/Code:** The following is the code for abserr()
 #include<cmath>
-void abserr(double &eps, double x, double xe){
-	eps = abs(x - xe);
+double abserr(double &eps, double x, double xe){
+	return dabs(x - xe);
+}
+float abserr(float x, float xe){
+	return fabs(x - xe);
 }
 
 

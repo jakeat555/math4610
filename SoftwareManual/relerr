@@ -17,8 +17,7 @@ better
 
 **Description/Purpose:** This is a function that provides the realitive error between an estimated and an actual value. This is defined as the absolute value of the difference of the two divided by the absolute value of the estimated value.
 
-**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate.
-Input x and xe are the value and the estimated value respectivly.
+**Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate. There is also an overwritten function provided for passing in two floats by refrence. Input x and xe are the value and the estimated value respectivly.
 
 **Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from relerr
 
@@ -35,9 +34,11 @@ printf("The realitive error is: %f",eps);
 
 **Implementation/Code:** The following is the code for relerr()
 #include<cmath>
-void relerr(double &eps, double x, double xe){
-	eps = std::abs(x - xe)/std::abs(xe);
+double relerr(double x, double xe){
+	return fabs(x - xe)/fabs(xe);
 }
-
+float relerr(float x, float xe){
+	return fabs(x - xe)/fabs(xe);
+}
 
 **Last Modified:** September/2019

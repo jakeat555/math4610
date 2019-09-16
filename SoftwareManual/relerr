@@ -19,7 +19,7 @@ better
 
 **Input:** The inputs for abserr one double, passed by refercence and two doubles, which are not passed by reference. Input eps is the epsilon that you are trying to calculate. There is also an overwritten function provided for passing in two floats by refrence. Input x and xe are the value and the estimated value respectivly.
 
-**Output:** There is no output as the variable eps is passed by refernce and thus carries all the relevant information gathered from relerr
+**Output:** The output of relerr is the corresponding data type of the input, and is the absoute value of the diffrence of the inputs divided by the estimated value.
 
 **Usage/Example:**
 

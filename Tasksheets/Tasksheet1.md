@@ -30,13 +30,13 @@ The table of contents for all homeworks can be found here: [Table of Contents](h
 
 We talked about this in class, but we didn't really go over it in depth and so I don't know how to do it.
 
-# Task 7 (Not done)
+# Task 7 (Functions are done, but shared library is not)
 
 The absolute error between a number and an approximation of that number: [abserr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/abserr)
 
 The relative error between a number and an approximation of that number: [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr)
 
-# Task 8 (Not done)
+# Task 8 (Functions are done, but shared library is not)
 
 The Double Machine Epsilon code is named [dmaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps)
 

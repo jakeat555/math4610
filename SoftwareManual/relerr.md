@@ -33,12 +33,13 @@ printf("The realitive error is: %f",eps);
 
 
 **Implementation/Code:** The following is the code for relerr()
-#include<cmath>
-double relerr(double x, double xe){
-	return fabs(x - xe)/fabs(xe);
-}
-float relerr(float x, float xe){
-	return fabs(x - xe)/fabs(xe);
-}
+
+	#include<cmath>
+	double relerr(double x, double xe){
+		return fabs(x - xe)/fabs(xe);
+	}
+	float relerr(float x, float xe){
+		return fabs(x - xe)/fabs(xe);
+	}
 
 **Last Modified:** September/2019

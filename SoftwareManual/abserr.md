@@ -32,13 +32,14 @@ printf("The absolute error is: %f",eps);
     Output: "The absolute error is: .099"
 
 **Implementation/Code:** The following is the code for abserr()
-#include<cmath>
-double abserr(double &eps, double x, double xe){
-	return dabs(x - xe);
-}
-float abserr(float x, float xe){
-	return fabs(x - xe);
-}
+	
+	#include<cmath>
+	double abserr(double &eps, double x, double xe){
+		return dabs(x - xe);
+	}
+	float abserr(float x, float xe){
+		return fabs(x - xe);
+	}
 
 
 **Last Modified:** September/2019

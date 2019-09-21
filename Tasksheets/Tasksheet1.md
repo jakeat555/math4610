@@ -26,9 +26,39 @@ Download it and run using ./NameOfCode.exe!
 
 The table of contents for all homeworks can be found here: [Table of Contents](https://github.com/jakeat555/math4610/blob/master/Tasksheets/TableOfContents.md)
 
-# Task 6 (Not done)
+# Task 6
 
-We talked about this in class, but we didn't really go over it in depth and so I don't know how to do it.
+This is a program that computes the derivite of e^(sin(x)) at x=pi with the central diffrence
+
+  ```#include<math.h>
+  #include<stdio.h>
+  double f(double x){
+    return exp(sin(x));
+    }
+  int main(){
+    double tol = .00001;
+    double error = 10*tol;
+    int iter = 0;
+    int maxIter=100;
+    double h = 1.0;
+    double fPrime;
+    while(error>tol && iter < maxIter){
+		  fPrime = (f(M_PI+h)-f(M_PI-h))/((M_PI+h)-(M_PI-h));
+		  error = fabs(fPrime+f(M_PI));
+		  // When shared library works use: error = abserr(fPrime,f(M_PI));
+      iter++;
+		  h *=.5;
+		  if( h == 0.0){
+		  	iter = maxIter;
+		  }
+	    }
+	  printf("Derivitive of e^x at pi is: %f",fPrime);
+	  return 0;
+    }
+```
+This code works by taking an approximation of the derivitive and then evaluating it and the error around it. Currently, the code stops
+when the error is ±.00001 (the tol) or when machine error stops it.
+  
 
 # Task 7 (Functions are done, but shared library is not)
 
@@ -42,12 +72,38 @@ The Double Machine Epsilon code is named [dmaceps](https://github.com/jakeat555/
 
 The Single Machine Epsilon code is named [smaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/smaceps)
 
-# Task 9 (Not done)
+# Task 9
 
-This program is called eDerivative and is found [here]()
+This program is called eDerivative and is found below and [here](https://github.com/jakeat555/math4610/blob/master/SharedLibrary/eDerivative.cpp)
 
-# Task 10 (Not done)
+```
+#include<math.h>
+#include<stdio.h>
+double f(double x){
+	return exp(x);
+}
+int main(){
+	double tol = .00001;
+	double error = 10*tol;
+	int iter = 0;
+	int maxIter=100;
+	double h = 1.0;
+	double fPrime;
+	while(error>tol && iter < maxIter){
+		fPrime = (f(M_PI+h)-f(M_PI-h))/(2*h);
+		error = fabs(fPrime-f(M_PI));
+		// When shared library works use: error = abserr(fPrime,f(M_PI));
+		iter++;
+		h *=.5;
+		if( h == 0.0){
+			iter = maxIter;
+		}
+	}
+	printf("Derivitive of e^x at pi is: %f",fPrime);
+	return 0;
+}
+```
 
-Here is a lengthy discussion on error:
-
-And its done. Please finish me.
+# Task 10
+Absolute errors are different from relitive erros only by a factor of `1/x*` where `x*` is the actual value. This means that in any case where `x*` is near 0, there will be little value in computing the realitive error. But for cases where `x*` is larger, there is more value in the relitive error as it uses the factor of `1/x` to represent the error *relitive* to the value. Often, when dealing with large numbers, an error of 1,000 would be fine. For example, if you're taking a world census, 7,731,913,000 ± 1,000 people is amazing. But if you're measuring the height of your growing kid 52 ± 1,000 inches is just going to dissapoint them.
+https://en.wikipedia.org/wiki/Approximation_error

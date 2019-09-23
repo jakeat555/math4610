@@ -22,9 +22,10 @@ better
 **Output:** There is no output for this code as all variables are passed by reference, but deps both and ipow are modified and updated to represent the minimum differnece and the correllating power by the completion of the function.
 
 **Usage/Example:**
-dmaceps(deps,-1);
-printf("The output of dmaceps is:" deps);
-    Output: "5.92342336792E-16"
+	
+	dmaceps(deps,-1);
+	printf("The output of dmaceps is:" deps);
+		Output: "5.92342336792E-16"
     
 This output means that there are 16 digits of precision until there is no guarentee of accuracy.
 

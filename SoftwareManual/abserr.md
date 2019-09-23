@@ -23,13 +23,13 @@ better
 
 **Usage/Example:**
 
-abserr(eps,1.1,1.01)
-printf("The absolute error is: %f",eps);
-    Output: "The absolute error is: 0.09"
+	abserr(eps,1.1,1.01)
+	printf("The absolute error is: %f",eps);
+		    Output: "The absolute error is: 0.09"
     
-abserr(eps,1.1,1.001)
-printf("The absolute error is: %f",eps);
-    Output: "The absolute error is: .099"
+	abserr(eps,1.1,1.001)
+	printf("The absolute error is: %f",eps);
+    		Output: "The absolute error is: .099"
 
 **Implementation/Code:** The following is the code for abserr()
 	

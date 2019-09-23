@@ -62,15 +62,15 @@ when the error is ±.00001 (the tol) or when machine error stops it.
 
 # Task 7 (Functions are done, but shared library is not)
 
-The absolute error between a number and an approximation of that number: [abserr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/abserr)
+The absolute error between a number and an approximation of that number: [abserr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/abserr.md)
 
-The relative error between a number and an approximation of that number: [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr)
+The relative error between a number and an approximation of that number: [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md)
 
 # Task 8 (Functions are done, but shared library is not)
 
-The Double Machine Epsilon code is named [dmaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps)
+The Double Machine Epsilon code is named [dmaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps.md)
 
-The Single Machine Epsilon code is named [smaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/smaceps)
+The Single Machine Epsilon code is named [smaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/smaceps.md)
 
 # Task 9
 

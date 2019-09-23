@@ -23,13 +23,13 @@ better
 
 **Usage/Example:**
 
-relerr(eps,1.1,1.01)
-printf("The realitive error is: %f",eps);
-    Output: "The absolute error is: .0891"
+	relerr(eps,1.1,1.01)
+	printf("The realitive error is: %f",eps);
+		Output: "The absolute error is: .0891"
     
-relerr(eps,1.1,1.001)
-printf("The realitive error is: %f",eps);
-    Output: "The absolute error is: .0989010989"
+	relerr(eps,1.1,1.001)
+	printf("The realitive error is: %f",eps);
+		Output: "The absolute error is: .0989010989"
 
 
 **Implementation/Code:** The following is the code for relerr()

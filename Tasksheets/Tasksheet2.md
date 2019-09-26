@@ -44,3 +44,5 @@ Compare the results from functional iteration and Bisection on the problems in T
 # Task 10:  (not complete)
 Search the internet for sites that discuss functional iteration for root finding. Try to find sites that show the effective use of this method in real problems. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 ## Solution
+
+Testing here

@@ -109,6 +109,7 @@ int main(){
 		if( h == 0.0){
 			iter = maxIter;
 		}
+		printf("fPrime: %f and error: %E \n", fPrime, error );
 	}
 	printf("Derivitive of e^x at pi is: %f",fPrime);
 	return 0;

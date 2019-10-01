@@ -6,11 +6,9 @@ x*cosh(x)+x^3=π
 Set up a root finding problem for this equation. This task does not require any code.
 
 ## Solution
-We will use the Bisection method to find this root. We can set the lower bound `a` to be 0.5 and `b` to be 1.5 Evaluating for our function at these points gives us `f(a)=.689` and `f(b)=6.904`. If we modify the conditions to be `f(a)f(b)-f(b)π<0` which evaluates to `-16.932<0`. Thus there is a root (where `x*cosh(x)+x^3=π` ) on the interval [.5,1.5].
+We can set up the root finding problem with this by rearranging the terms to get `x*cosh(x)+x^3-π = 0`. This will let us solve for the root of this equation, which we now call `f(x)`.
 
-We can set up the root finding problem with this by rearranging the terms to get `x*cos(x)+x^3-π = 0`. This will let us solve for the root of this equation, which we now call `f(x)`.
-
-# Task 2: (not complete)
+# Task 2:
 Consider the nonlinear equation
 ```
 x*cosh(x)+x^3=π
@@ -18,7 +16,21 @@ x*cosh(x)+x^3=π
 Set up at least two associated fixed point iteration for this equation. You do not need to write a code for this problem.
 
 ## Solution
-Our first fixed point iteration will be `g(x) = x + f(x) = x*cos(x)+x^3+x-pi`. 
+Our first fixed point iteration will be `g1(x) = x => g1(x) =  x - .15(x*cosh(x)+x^3-pi)` . This has a derivative `g1'(x) = 1-.15*(3*x^2+x*sinh(x)+cosh(x))` which, evaluated at our root, is about `.009`. This means that `|g1(x*)| = .009` which means that this function will converge to the root quickly.
+
+Our second fixed point iteration will be `g2(x) = x => g2(x) = x- .002(x*cosh(x)+x^3-pi)` . This has a derivative `g2'(x) = 1-0.002(3x^2+x*sinh (x)+cosh(x))` which evaluated at our root, is about `0.986`. This means that `|g2'(x*)| = .986 < 1` which means that this function will converge to the root (eventually).
+
+Below is a table showing how quickly both `g1(x)` and `g2(x)` converge
+
+| x          | g1(x)       | g2(x)       | error 1     | error 2     |
+|------------|-------------|-------------|-------------|-------------|
+| x0 = 1     | 1.089776803 | 1.001197024 | 0.006550987 | 0.095130766 |
+| x1 = g(x0) | 1.096351589 | 1.002380344 | 0.000023799 | 0.093947446 |
+| x2 = g(x1) | 1.096327572 | 1.003550089 | 2.18e-7     | 0.092777701 |
+| x3 = g(x2) | 1.096327790 | 1.004706387 | 0           | 0.091621403 |
+| x4 = g(x3) | 1.096327788 | 1.005849367 | 1.999e-9    | 0.090478423 |
+
+Note how quickly our first interation converged, but then sporadiclly changed. The second iteration was a more slow and steady convergance.
 
 # Task 3:  (not complete)
 Write code that implements fixed point iteration for the equation defined in the previous two tasks. Try out the method on the fixed point iteration equations in Task 1 and Task 2. Make sure that the code you write is in the form of a method or subroutine that can be added to your shared library. You should also write a main program to test the code.

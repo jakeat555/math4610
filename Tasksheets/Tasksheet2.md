@@ -53,8 +53,11 @@ Repeat Task 7 for the Bisection method.
 # Task 9:  (not complete)
 Compare the results from functional iteration and Bisection on the problems in Tasksheet 2, Task 1 and Task2. Which provides a better approximation and on the efficiency of the methods.
 ## Solution
-# Task 10:  (not complete)
+
+# Task 10:
 Search the internet for sites that discuss functional iteration for root finding. Try to find sites that show the effective use of this method in real problems. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 ## Solution
-
-Testing here
+The use of functional iteration for root finding has been going on for a while. From what I could gather, there was enough discrepency in the moons actual orbit from what was predicted by Keplarian laws, that Newton used perturbation theory to better appoximate the orbit by using a multi-body system. Much like we are forced to do in the analysis of our methods, many things must be truncated (like the solutuion or our Taylor series approximation). Now we use our computational mathematics to approximate solutions to differential equations.
+https://en.wikipedia.org/wiki/Numerical_analysis
+https://en.wikipedia.org/wiki/Perturbation_theory
+https://en.wikipedia.org/wiki/Celestial_mechanics

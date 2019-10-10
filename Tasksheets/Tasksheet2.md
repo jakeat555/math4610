@@ -1,4 +1,4 @@
-# Task 1: (not complete)
+# Task 1:
 Consider the nonlinear equation
 ```
 x*cosh(x)+x^3=π
@@ -32,27 +32,118 @@ Below is a table showing how quickly both `g1(x)` and `g2(x)` converge
 
 Note how quickly our first interation converged, but then sporadiclly changed. The second iteration was a more slow and steady convergance.
 
-# Task 3:  (not complete)
+# Task 3:
 Write code that implements fixed point iteration for the equation defined in the previous two tasks. Try out the method on the fixed point iteration equations in Task 1 and Task 2. Make sure that the code you write is in the form of a method or subroutine that can be added to your shared library. You should also write a main program to test the code.
 ## Solution
-# Task 4:  (not complete)
+```
+double fixedPt( double x0 , double tolerance , int maxIteration){
+		double error = 10 * tolerance;
+		double x1 = 0.0;
+		int iteration = 0;
+		
+		while(error > tolerance & iteration < maxIteration){
+			x1 = g(x0);
+			printf("x%d \t g(x)=%E \n",iteration, x1);
+			error = fabs(x1-x0);
+			x0 = x1;
+			if (++iteration >= maxIteration){
+				printf("Error: too many iterations, error of %E at %d iteration\n",error, iteration);
+			}
+		}
+		return x1;
+	} 
+```
+We define a main function to call fixedPt() using our set up in Task 1, with the finding function to be g1(x) from Task 2. Using our main function to call this method, we ge the following output:
+```
+x0       g(x)=1.089777E+00
+x1       g(x)=1.096352E+00
+x2       g(x)=1.096328E+00
+x3       g(x)=1.096328E+00
+
+Output: 1.096328E+00
+```
+# Task 4:
 Write a code that computes the roots of a function of one variable using the Bisection method. The algorithm should be written into a subroutine or method that can be called from a main program. Include the routine in the shared library that you are creating for the course.
 ## Solution
-# Task 5:  (not complete)
+The method is as follows
+```
+double bisect(double a,double b,double tol){
+			//test f on [a,b]
+			if(f(a)==0.0)
+				return a;
+			if(f(b)==0.0)
+				return b;
+			try{
+				throw f(a)*f(b)>0.0;
+			} 
+			catch (bool b){
+				if(b){
+					printf("error in bounds");
+				}
+			}
+			// compute the number of iteration
+			double k = log((b-a)/tol)+1;
+			double c = .5*(b+a);
+			for(int i = 0; i < k; i++){
+				c = .5*(b+a);
+				printf("c%d\t%E\n",i,c);
+				if(f(c)==0.0){
+					printf("f(c):%E",f(c));
+					return c;
+				}
+				else if(f(a)*f(c)<0.0){
+					b =c;
+				}
+				else{ //(f(c)*f(b)<0)
+					a=c;
+				}
+			}
+			return c;
+		}
+```
+We can then write a main function, that tests the method on the function `x^3-5.3` which has a root at `1.74351`.
+The call from the main function will output the following, where `ci` is the aproximate root after `i` iterations.
+```
+c0      1.000000E+00
+c1      1.500000E+00
+c2      1.750000E+00
+c3      1.625000E+00
+c4      1.687500E+00
+c5      1.718750E+00
+c6      1.734375E+00
+c7      1.742188E+00
+c8      1.746094E+00
+c9      1.744141E+00
+c10     1.743164E+00
+output: 1.743164E+00
+
+```
+# Task 5:
 Start your software manual by including the routines you have written for computing the single precision machine epsilon and double precision machine epsilon. Use the template provided in the math4610 repository for the course.
 ## Solution
-# Task 6:  (not complete)
+Check out smaceps [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/smaceps.md)
+
+Check out dmaceps [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps.md)
+# Task 6:
 Add pages in your software manual that document the routines created for absolute error and relative error.
 ## Solution
-# Task 7:  (not complete)
+Check out abserr [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/abserr.md)
+
+Check out relerr [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md)
+# Task 7:
 Complete pages in your software manual that document the code written for functional iteration for finding the roots of a function of a single real variable. Use the results in Task 3 as examples for the software page.
 ## Solution
-# Task 8:  (not complete)
+Check out the entry here: [FixedPt](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/FixedPoint.md)
+
+# Task 8:
 Repeat Task 7 for the Bisection method.
 ## Solution
-# Task 9:  (not complete)
+Check out the entry here: [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md)\
+
+# Task 9:
 Compare the results from functional iteration and Bisection on the problems in Tasksheet 2, Task 1 and Task2. Which provides a better approximation and on the efficiency of the methods.
 ## Solution
+The functional iteration problem finds a root in linear time. It aslo has the restriction that `g(x)` is very hard to find. The bisection method converges to a root faster, at a semi-quadratic rate. But the trade off of speed, comes at the cost of knowledge, as the function must be once differentiable around the root for the bisection to work. Futhermore, there is some peace in knowing that the bisection method will only iterate a predetermined number of times. Finally, in the authors personal opinion, the bisection method makes more intuitive sense. 
 
 # Task 10:
 Search the internet for sites that discuss functional iteration for root finding. Try to find sites that show the effective use of this method in real problems. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.

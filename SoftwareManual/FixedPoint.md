@@ -24,7 +24,7 @@ fixedPt has inputs of a function `f`, a helper function `g`, an intial guess `x0
 fixedPt will output each guess that it makes until the tolerance or max iterations is met. This includes a final return value of the root approximation
 
 **Usage/Example:**
-Using the functions `f(x) = x*cosh(x) + x*x*x - M_PI` and `g(x) =  x- .15*(x*cosh(x) + x*x*x - M_PI)` with a starting guess of `x0 = 1` will yield
+Using the functions `f(x) = x*cosh(x) + x^3 - π` and `g(x) =  x- .15*(x*cosh(x) + x^3 - π))` with a starting guess of `x0 = 1` will yield
 ```
 x0       g(x)=1.089777E+00
 x1       g(x)=1.096352E+00

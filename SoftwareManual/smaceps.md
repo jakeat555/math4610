@@ -27,9 +27,11 @@ that's to mean that it is iterated over, minimizing it until the differnce of th
 to represent the minimum differnece and the correllating power by the completion of the function.
 
 **Usage/Example:**
+```
 dmaceps(seps,-1);
 printf("The output of smaceps is:" seps);
     Output: "5.92342336792E-16"
+```
     
 This output means that there are 16 digits of precision until there is no guarentee of accuracy.
 

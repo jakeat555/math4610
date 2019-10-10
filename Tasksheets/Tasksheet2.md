@@ -138,7 +138,7 @@ Check out the entry here: [FixedPt](https://github.com/jakeat555/math4610/blob/m
 # Task 8:
 Repeat Task 7 for the Bisection method.
 ## Solution
-Check out the entry here: [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md)\
+Check out the entry here: [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md)
 
 # Task 9:
 Compare the results from functional iteration and Bisection on the problems in Tasksheet 2, Task 1 and Task2. Which provides a better approximation and on the efficiency of the methods.

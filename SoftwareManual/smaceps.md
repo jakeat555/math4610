@@ -1,4 +1,4 @@
-# Math 4610 Software Manual Template File
+# Math 4610 Software Manual File
 
 **Routine Name:** smaceps
 

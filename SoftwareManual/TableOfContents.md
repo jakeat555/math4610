@@ -10,4 +10,6 @@
 
 [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md) - Realitive Error
 
+[Secant](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Secant.md) - Secant Root Finding Method
+
 [smaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/smaceps.md) - Single Machine Epsilons

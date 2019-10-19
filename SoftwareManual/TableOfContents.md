@@ -6,6 +6,8 @@
 
 [Fixed Point](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/FixedPoint.md) - Fixed Point Root Finding Method
 
+[hybridNewton](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/hybridNewton.md) - Bisection/Newtons Hybrid method
+
 [Newtons](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Newtons.md) - Newtons Root Finding Method
 
 [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md) - Realitive Error

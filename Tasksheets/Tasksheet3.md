@@ -33,6 +33,19 @@ In some cases it is necessary to find a number of roots for a function of one va
 ```f(x)=sin(πx^2+3.7)```
 Use the interval [1.1,68.3]. It might pay to identify where the zeros are in this problem.
 ## Solution
+```
+void bracketing(double a, double b,int numIntervals,double zeros[], double tol, double maxIter){
+	double subint = (b-a)/numIntervals;
+	printf("subint %f",subint);
+	b=a+subint;
+	for(int i = 0; i<numIntervals; i++){
+		zeros[i] = bisect(a,b,tol,maxIter);
+		a=b;
+		b=a+subint;
+	}
+}
+```
+This code snippet starts by first computing the length of the sub interval. Then across each sub-interval, the [bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md) method is run and *a* root in the interval is returned (if any exist).
 
 # Task 8
 Repeat the work from Task 7 using Newton's method.

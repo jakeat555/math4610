@@ -8,6 +8,10 @@
 
 [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md) - Bisection Root Finding Method
 
+[crossProduct](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/crossProduct.md) - Cross Product
+
+[dotProduct](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dotProduct.md) - Dot Product
+
 [dmaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps.md) - Double Machine Epsilons
 
 [Fixed Point](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/FixedPoint.md) - Fixed Point Root Finding Method
@@ -29,6 +33,8 @@
 [relError2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError2.md) - 2-Norm Realitive Error of Vectors
 
 [relErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relErrorInf.md) - Infinty-Norm Realitive Error of Vectors
+
+[SAXPY](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/SAXPY.md) - Single-Precision A.X Plus Y
 
 [Secant](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Secant.md) - Secant Root Finding Method
 

@@ -4,7 +4,7 @@
 
 [absError2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError2.md) - 2-Norm Absolute Error of Vectors
 
-[absErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - Infinty-Norm Absolute Error of Vectors
+[absErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relErrorInf.md) - Infinty-Norm Absolute Error of Vectors
 
 [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md) - Bisection Root Finding Method
 
@@ -28,7 +28,7 @@
 
 [relError2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError2.md) - 2-Norm Realitive Error of Vectors
 
-[relErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - Infinty-Norm Realitive Error of Vectors
+[relErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relErrorInf.md) - Infinty-Norm Realitive Error of Vectors
 
 [Secant](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Secant.md) - Secant Root Finding Method
 

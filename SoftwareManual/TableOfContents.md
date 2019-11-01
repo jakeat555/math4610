@@ -8,6 +8,12 @@
 
 [hybridNewton](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/hybridNewton.md) - Bisection/Newtons Hybrid method
 
+[length_1](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/length_1.md) - 1-Norm Vector Length
+
+[length_2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/length_2.md) - 2-Norm Vector Length
+
+[length_Inf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/length_Inf.md) - Infinty-Norm Vector Length
+
 [Newtons](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Newtons.md) - Newtons Root Finding Method
 
 [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md) - Realitive Error

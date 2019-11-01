@@ -15,18 +15,27 @@ better
 
     g++ -o length_1 length_1.cpp
 
-**Description/Purpose:** 
+**Description/Purpose:** This function is used to compute the length of a vector using the 1-norm calculation, meaning that each element is summed.
 
-**Input:** 
+**Input:** This fucntion takes an input of a vector filled with doubles.
 
-**Output:** 
+**Output:** The output of this function is a single double that is the sum of all elements
 
-**Usage/Example:**
-
-
+**Usage/Example:** Calling this method on the vector `x=<7.1, 5.0, 16.34, 8.001>` gives the output
+```
+Length of vector using 1-norm: 36.441000
+```
 
 **Implementation/Code:** The following is the code for length_1.cpp
-
+```
+double length_1( std::vector<double> x){
+	double sum;
+	for(int i = 0; i < x.size(); i++){
+		sum += x[i];
+	}
+	return sum;
+}
+```
 
 
 **Last Modified:** October/2019

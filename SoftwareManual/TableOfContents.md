@@ -1,5 +1,11 @@
 [abserr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/abserr.md) - Absolute Error
 
+[absError1](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - 1-Norm Absolute Error of Vectors
+
+[absError2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError2.md) - 2-Norm Absolute Error of Vectors
+
+[absErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - Infinty-Norm Absolute Error of Vectors
+
 [Bisection](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Bisection.md) - Bisection Root Finding Method
 
 [dmaceps](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/dmaceps.md) - Double Machine Epsilons
@@ -17,6 +23,12 @@
 [Newtons](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Newtons.md) - Newtons Root Finding Method
 
 [relerr](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relerr.md) - Realitive Error
+
+[relError1](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - 1-Norm Realitive Error of Vectors
+
+[relError2](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError2.md) - 2-Norm Realitive Error of Vectors
+
+[relErrorInf](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/relError1.md) - Infinty-Norm Realitive Error of Vectors
 
 [Secant](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/Secant.md) - Secant Root Finding Method
 

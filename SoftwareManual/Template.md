@@ -25,8 +25,8 @@ better
 
 
 
-**Implementation/Code:** The following is the code for foo()
+**Implementation/Code:** The following is the code for foo
 
 
 
-**Last Modified:** September/2019
+**Last Modified:** November 2019

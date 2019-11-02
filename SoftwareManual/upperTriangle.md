@@ -15,7 +15,7 @@ better
 
     g++ -o upperTriangle upperTriangle.cpp
 
-**Description/Purpose:** This method analyzes a square diagonal matrix (entries below the main diagonal are zero) and finds the solution that, when matrix multiplied, produces a targeted vector.
+**Description/Purpose:** This method analyzes a square upper triangle matrix (entries below the main diagonal are zero) and finds the solution that, when matrix multiplied, produces a targeted vector.
 
 **Input:** This method needs a `(nxn)` matrix `A` and a vector to solve for `b` (of length `n`).
 

@@ -21,11 +21,11 @@ better
 
 **Output:** The output for this methos is a rectangluar matrix `(mxn)` that is in row echelon form. To improve effectiency, old values in the lower triangle are not written over.
 
-**Usage/Example:** Using the test matrix `A[][3] = { {3,2.7,5.5} , {0.01,4.5,3.1} , {5,2.1,9}}` we get the output
+**Usage/Example:** Using the test matrix `A[][] = { {5,2.1,9} ,  {0.01,4.5,3.1} , {3,2.7,5.5} }` we get the output
 ```
-3.000000        2.700000        5.500000
-0.010000        4.491000        3.081667
-5.000000        -2.400000       1.480183
+5.000000        2.100000        9.000000
+0.010000        4.495800        3.082000
+3.000000        1.440000        -0.887161
 ```
 Again, note how `A[1][0]` and others are their origional values, meaning that they weren't changed to 
 

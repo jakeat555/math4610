@@ -53,7 +53,7 @@ Embed scaled partial pivoting in a new version of the LU-factorization linear so
 ## Solution
 
 
-# Task 10 (not done)
+# Task 10
 Search the internet for sites that document pivoting strategies in numerical solution of linear equations. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 
 ## Solution

@@ -57,7 +57,7 @@ Embed scaled partial pivoting in a new version of the LU-factorization linear so
 Search the internet for sites that document pivoting strategies in numerical solution of linear equations. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 
 ## Solution
-Pivoting in regards to numerical solutions of linear equations is the exchanging of rows in the process of reducing a matrix into row echelon form. One way to choose a pivot is to choose the largest number that is in the column. This is partial pivoting and it is pretty good at rudcuting computational roundoff error. Another is to choose the pivot as the default, which is the value at the interaction between the column and rows in question. Then
+Pivoting in regards to numerical solutions of linear equations is the exchanging of rows in the process of reducing a matrix into row echelon form. One way to choose a pivot is to choose the largest number that is in the column. This is partial pivoting and it is pretty good at rudcuting computational roundoff error. Another is to choose the pivot as the default, which is the value at the interaction between the column and rows in question. Then there is complete pivoting, which uses the largest element in the matrix as the pivot, which is the gold standard for error reduction (but is more computational intensive).
 
 https://en.wikipedia.org/wiki/Gaussian_elimination
 https://en.wikipedia.org/wiki/Pivot_element

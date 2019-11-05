@@ -19,14 +19,30 @@ better
 
 **Input:** The input for this method is a rectangular matrix `(mxn)`
 
-**Output:** The output for this methos is a rectangluar matrix `(mxn)` that is in row echelon form.
+**Output:** The output for this methos is a rectangluar matrix `(mxn)` that is in row echelon form. To improve effectiency, old values in the lower triangle are not written over.
 
-**Usage/Example:**
-
+**Usage/Example:** Using the test matrix `A[][3] = { {3,2.7,5.5} , {0.01,4.5,3.1} , {5,2.1,9}}` we get the output
+```
+3.000000        2.700000        5.500000
+0.010000        4.491000        3.081667
+5.000000        -2.400000       1.480183
+```
+Again, note how `A[1][0]` and others are their origional values, meaning that they weren't changed to 
 
 
 **Implementation/Code:** The following is the code for rowEchelon
-
+```
+void rowEchelon(double A[][3],int n){
+	for(int k=0; k<n-1;k++){
+		for(int i=k+1; i<n; i++){
+			double factor = A[i][k] / A[k][k];
+			for(int j=k+1;j<n; j++){
+				A[i][j] = A[i][j] - factor*A[k][j];		
+			}
+		}
+	}
+}
+```
 
 
 **Last Modified:** November 2019

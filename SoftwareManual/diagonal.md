@@ -21,11 +21,23 @@ better
 
 **Output:** The output of this method is a matrix of size `(nxn)`
 
-**Usage/Example:**
+**Usage/Example:** Using with a test matrix `A[][3] = { {3,0,0} , {0,4.5,0} , {0,0,9}}` and solution vector `b[] = {3,5,2.1};` we get the output
+```
+        1.000000
+x:      1.111111
+        0.233333
+```
 
 
 
 **Implementation/Code:** The following is the code for diagonal
+```
+void diagonal(double A[][3], double x[], double b[], int n){
+	for(int i=0; i<n; i++){
+		x[i] = b[i]/A[i][i];
+	}
+}
+```
 
 
 

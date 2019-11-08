@@ -29,23 +29,25 @@ Write a code that will solve a square linear system of equations using Gaussian 
 ## Solution
 Check out the Gaussian Elimination [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/gaussianElim.md)
 
-# Task 6 (not done)
+# Task 6
 Write a routine that will compute the LU-factorization of a square matrix. Put an entry in your software manual to document the code.
 
 ## Solution
+Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/LUFactor.md)
 
 
-# Task 7 (not done)
+# Task 7
 Create a routine that will solve a linear system of equations using the LU-factorization. Make sure you include a page in your software manual.
 
 ## Solution
+Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/LUSolve.md)
 
-
-# Task 8 (not done)
+# Task 8
 Using OpenMP, see if you can speed up the LU-factorization solution method from the previous task.
 
 ## Solution
-
+Using OpenMP's ability to parallelize for loops, we were able to speed up our solving by a factor of `10^3`. This was possible by using 4 cores to process all the threads.
+![Image](https://github.com/jakeat555/math4610/blob/master/Tasksheets/src/SolveButFaster.PNG)
 
 # Task 9 (not done)
 Embed scaled partial pivoting in a new version of the LU-factorization linear solution method. using more than one processor. Do this without interchanging rows - use an index vector to improve efficiency.

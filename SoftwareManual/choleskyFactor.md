@@ -15,11 +15,11 @@ better
 
     g++ -o choleskyFactor choleskyFactor.cpp
 
-**Description/Purpose:** 
+**Description/Purpose:** This takes in a matrix and will output its Choleskian factorization, which defined to be the product of two other matrices, `L` and `L*`, where `L` is a lower triangle and `L*` is the congugate transpose of `L`.
 
-**Input:** 
+**Input:** This method takes in a positive definite matrix `A`
 
-**Output:** 
+**Output:** The output of this function is two matrices, `L`, a [lower Triangle](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/lowerTriangle.md) and `L*`, the congugate transpose of `L`.
 
 **Usage/Example:**
 

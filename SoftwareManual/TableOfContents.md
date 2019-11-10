@@ -61,6 +61,8 @@
 
 [rowEchelon](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/rowEchelon.md) - Reduce to Row Echelon Form
 
+[choleskyFactor](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/choleskyFactor.md) - Cholesky Factorization
+
 ## Solving Linear Systems
 
 [diagonal](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/diagonal.md) - Diagonal Coeffecient Matrix
@@ -72,3 +74,17 @@
 [gaussianElim](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/gaussianElim.md) - Gaussian Elimination into Upper Triangle
 
 [LUSolve](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/LUSolve.md) - Lower/Upper Triangle Matrix Solver
+
+[jacobiIter](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/jacobiIter.md) - Jakobian Iteration Solver
+
+[gaussSeidel](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/gaussSeidel.md) - Gauss-Seidel Solver
+
+## Generators
+
+[generateSquare](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSquare.md) - Random Square Matrix Generator
+
+[generateDiagDom](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateDiagDom.md) - Random Diagonally Dominant Matrix Generator
+
+[generateSymmetric](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetric.md) - Random Symmetric Matrix Generator
+
+[generateSymmetricDiagDom](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetricDiagDom.md) - Random Symmetric Diagonal Dominant Matrix Generator

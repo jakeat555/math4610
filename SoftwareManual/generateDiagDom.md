@@ -17,9 +17,9 @@ better
 
 **Description/Purpose:** This method outputs a diagonally dominant matrix that has been filled with uniformly random numbers.
 
-**Input:** The input of this method is a row size `m` and column size `n` that the diagonally dominant matrix is to be.
+**Input:** The input of this method is a row and column size `n` that the diagonally dominant matrix is to be.
 
-**Output:** The output of this function is a `mxn` diagonally dominant matrix, randomly filled with values.
+**Output:** The output of this function is a `nxn` diagonally dominant matrix, randomly filled with values.
 
 **Usage/Example:**
 

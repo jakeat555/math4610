@@ -58,8 +58,10 @@ double hybridSecant(double a, double b,double x0, double x1, double tol, double 
 	double error = 10*tol;
 	while(error > tol && iter < maxIter){
 		iter++;
+		// Make intial approximation with secant method
 		x0 = secant(x0,x1,tol,maxIter);
-		printf("Secant Method after %d iteration: %E\n",iter,x0);
+		
+		//If approximation isn't close enough (error of -DBL_MAX), then whittle down interval w/ bisection
 		if( x0 == -DBL_MAX){
 			x0 = bisect(a,b,tol,maxIter);
 			double unit = (a+b)/8;

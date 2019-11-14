@@ -49,8 +49,11 @@ double hybridNewton(double a, double b,double x0, double tol, double maxIter){
 	double error = 10*tol;
 	while(error > tol && iter < maxIter){
 		iter++;
+		// Approximate x* with some newtons
 		x0 = Newton(x0,tol,maxIter);
-		printf("Newtons Method after %d iteration: %E\n",iter,x0);
+		
+		// If approximation isn't near enough apply bisection
+		// Newtons returns -DBL_MAX if conditions aren't met
 		if( x0 == -DBL_MAX){
 			x0 = bisect(a,b,tol,maxIter);
 			double unit = (a+b)/8;
@@ -65,4 +68,4 @@ double hybridNewton(double a, double b,double x0, double tol, double maxIter){
 ```
 
 
-**Last Modified:** October 2019
+**Last Modified:** November 2019

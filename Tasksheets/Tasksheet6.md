@@ -34,7 +34,7 @@ Repeat Task 3 with output that is both symmetric and diagonally dominant.
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetricDiagDom.md)
 
-# Task 7 (not done)
+# Task 7
 Use each of the matrix generation routines with your Jacobi iteration to test the code. You should generate a matrix with dimension `n` with `n` large, create the right hand side of the system by multiplying the matrix on the left into a vector of ones. Then solve the resulting system. You solutions should be close to 1 if your Jacobi iteration is working.
 
 ## Solution

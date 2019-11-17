@@ -16,7 +16,7 @@ Write a routine that will create a square matrix with dimension `n`. Use a rando
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSquare.md)
 
-# Task 4 (not done)
+# Task 4
 Repeat Task 3 with output that is diagonally dominant as defined in class.
 
 ## Solution

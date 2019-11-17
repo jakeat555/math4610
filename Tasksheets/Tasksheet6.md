@@ -4,7 +4,7 @@ Write a code that implements a Cholesky factorization of a real matrix. Include 
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/choleskyFactor.md)
 
-# Task 2 (not done)
+# Task 2
 Write a method that implements Jacobi iteration for solving linear systems of equations. Put an entry in your software manual for this method.
 
 ## Solution

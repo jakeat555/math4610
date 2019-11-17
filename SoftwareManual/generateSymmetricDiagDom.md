@@ -21,12 +21,27 @@ better
 
 **Output:** The output of this function is a square, symmetric, diagonally dominant matrix, randomly filled with values.
 
-**Usage/Example:**
-
+**Usage/Example:** The following is output when the function is used to make a `4x4` diagonally dominant symmetric matrix.
+```
+4.123641        0.029163        0.520104        0.270973
+0.029163        4.717334        0.840049        0.221663
+0.520104        0.840049        4.908358        0.314550
+0.270973        0.221663        0.314550        4.289440
+```
 
 
 **Implementation/Code:** The following is the code for generateSymmetricDiagDom
-
+```
+void generateDiagDomSymmetric(double A[][4], int n){
+	for(int i=0; i<n;i++){
+		for(int j=i; j<n; j++){
+			A[i][j] = double(rand()) / (double(RAND_MAX) + 1.0);
+			A[j][i] = A[i][j];
+		}
+		A[i][i] += n;
+	}
+}
+```
 
 
 **Last Modified:** November 2019

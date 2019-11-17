@@ -22,7 +22,7 @@ Repeat Task 3 with output that is diagonally dominant as defined in class.
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateDiagDom.md)
 
-# Task 5 (not done)
+# Task 5
 Repeat Task 3 with output that is a symmetric matrix.
 
 ## Solution

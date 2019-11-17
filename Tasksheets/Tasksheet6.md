@@ -28,7 +28,7 @@ Repeat Task 3 with output that is a symmetric matrix.
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetric.md)
 
-# Task 6 (not done)
+# Task 6
 Repeat Task 3 with output that is both symmetric and diagonally dominant.
 
 ## Solution

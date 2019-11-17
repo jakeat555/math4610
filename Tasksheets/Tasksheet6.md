@@ -1,4 +1,4 @@
-# Task 1 (not done)
+# Task 1
 Write a code that implements a Cholesky factorization of a real matrix. Include a check on the matrix to make sure it is symmetric. Put an entry in your software manual that documents the method.
 
 ## Solution

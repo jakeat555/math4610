@@ -19,13 +19,32 @@ better
 
 **Input:** The input of this method is a size `n` that the square matrix is to be.
 
-**Output:** The output of this function is a square matrix, randomly filled with values.
+**Output:** The output of this function is a square matrix, randomly filled with values from 0 up to 1.
 
-**Usage/Example:**
-
+**Usage/Example:** With parameter `n=3`, you get the matrix
+```
+0.350015        0.921262        0.796501
+0.040906        0.909443        0.567978
+0.502482        0.490579        0.334239
+```
+But, with a diffrent seed time (run again), a diffrent matrix is produced
+```
+0.000000        0.690001        0.505418
+0.591491        0.554785        0.378429
+0.257732        0.207382        0.626262
+```
 
 
 **Implementation/Code:** The following is the code for generateSquare
+```
+void generateSquare(double A[][3], int n){
+	for(int i=0; i<n;i++){
+		for(int j=0; j<n; j++){
+			A[i][j] = double(rand()) / (double(RAND_MAX) + 1.0);
+		}
+	}
+}
+```
 
 
 

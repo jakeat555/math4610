@@ -10,7 +10,7 @@ Write a method that implements Jacobi iteration for solving linear systems of eq
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/jacobiIter.md)
 
-# Task 3 (not done)
+# Task 3
 Write a routine that will create a square matrix with dimension `n`. Use a random number generator to determine the entries in the matrix. You can use a uniform distribution as the basis for the values created. Put a page in for this method.
 
 ## Solution

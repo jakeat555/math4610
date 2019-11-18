@@ -38,8 +38,8 @@ Iteration 8, x = <0.999674,2.000448,-1.000369,1.000619>
 
 **Implementation/Code:** The following is the code for jacobiIter
 ```
-void jacobiIter(double A[][4], double xNew[], double b[], double tol,int maxIter, int n){
-	double xOld[n];
+void jacobiIter(double A[][4], double xOld[], double b[], double tol,int maxIter, int n){
+	double xNew[n];
 	double error = 10*tol;
 	int iter = 0;
 	while(error > tol && iter < maxIter){

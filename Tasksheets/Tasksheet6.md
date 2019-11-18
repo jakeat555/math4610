@@ -34,25 +34,25 @@ Repeat Task 3 with output that is both symmetric and diagonally dominant.
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetricDiagDom.md)
 
-# Task 7 (not done)
+# Task 7
 Use each of the matrix generation routines with your Jacobi iteration to test the code. You should generate a matrix with dimension `n` with `n` large, create the right hand side of the system by multiplying the matrix on the left into a vector of ones. Then solve the resulting system. You solutions should be close to 1 if your Jacobi iteration is working.
 
 ## Solution
 We started with a `4x4` square matrix, which was generated from previous work.
 ```
-0.000000        0.690001        0.505418        0.591491
-0.554785        0.378429        0.257732        0.207382
-0.626262        0.340127        0.843852        0.068778
-0.409907        0.879994        0.319480        0.980568
+0.390032        0.967939        0.173655        0.453616
+0.087746        0.636831        0.696883        0.192656
+0.756080        0.955597        0.816563        0.643773
+0.982609        0.504067        0.813204        0.218103
 ```
 Note how this is not diagonally dominant, so the Jacobi Iteration is not expected to succeed. And it doesn't. It quickly diverges.
 ```
-Iteration 0, x = <inf,3.695087,2.226716,2.641274>
-Iteration 1, x = <-inf,-inf,-inf,-inf>
-Iteration 2, x = <inf,inf,inf,inf>
-Iteration 3, x = <-inf,-inf,-inf,-inf>
-Iteration 4, x = <inf,inf,inf,inf>
-Iteration 5, x = <-inf,-inf,-inf,-inf>
+Iteration 0, x = <5.089946,2.534607,3.884591,11.544926>
+Iteration 1, x = <-16.356720,-5.910219,-12.896455,-31.728222>
+Iteration 2, x = <62.399846,28.499406,50.960627,146.980273>
+Iteration 3, x = <-259.267485,-106.294208,-203.123507,-525.456609>
+Iteration 4, x = <970.434451,419.498247,782.607315,2182.623797>
+Iteration 5, x = <-3922.858181,-1647.876641,-3106.361179,-8248.003302>
 ```
 
 Next was a `4x4` matrix from my diagonally dominant matrix, which was
@@ -75,21 +75,19 @@ Iteration 6, x = <1.000321,1.000210,1.000196,1.000250>
 
 Then was a `4x4` symmetric matrix generated as such
 ```
-0.000000        0.690001        0.505418        0.591491
-0.690001        0.554785        0.378429        0.257732
-0.505418        0.378429        0.207382        0.626262
-0.591491        0.257732        0.626262        0.340127
+0.390032        0.967939        0.173655        0.453616
+0.967939        0.087746        0.636831        0.696883
+0.173655        0.636831        0.192656        0.756080
+0.453616        0.696883        0.756080        0.955597
 ```
 Since it is not diagonally dominant, then we expect the Jaocbi to fail. As it does
 ```
-Iteration 0, x = <14.824085,3.390394,8.281775,5.338041>
-Iteration 1, x = <-65.501589,-23.175719,-50.153361,-38.259458>
-Iteration 2, x = <545.513274,136.840893,325.746601,229.154054>
-Iteration 3, x = <-3258.760082,-1003.733082,-2262.924338,-1646.801268>
-Iteration 4, x = <23329.444441,6365.021105,14755.013725,10599.630514>
-Iteration 5, x = <-150298.401351,-44000.915877,-100472.837742,-72556.177061>
-Iteration 6, x = <1029189.813401,289174.747533,665706.927589,479717.081225>
-Iteration 7, x = <-6800488.448592,-1956976.791325,-4484622.719786,-3234648.334956>
+Iteration 0, x = <5.089946,27.230860,9.131416,2.995171>
+Iteration 1, x = <-70.037695,-118.977625,-97.223635,-26.504383>
+Iteration 2, x = <374.468012,1715.942542,569.562804,199.932320>
+Iteration 3, x = <-4739.463413,-9825.148485,-6785.146863,-1876.783557>
+Iteration 4, x = <29591.785724,116458.770698,44123.974273,14786.412477>
+Iteration 5, x = <-325851.988664,-764075.493234,-469651.962438,-133884.720510>
 ```
 
 Finally, we generated a diagonally dominant, symmetric matrix as follows

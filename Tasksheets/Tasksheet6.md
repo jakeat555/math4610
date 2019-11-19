@@ -97,7 +97,7 @@ Finally, we generated a diagonally dominant, symmetric matrix as follows
 0.134226        0.344439        4.943948        0.232431
 0.501243        0.176906        0.232431        4.698243
 ```
-Since it was diagonlly dominant, the Jacobi Iteration finds an approximation to the solution
+Since it was diagonally dominant, the Jacobi Iteration finds an approximation to the solution
 ```
 Iteration 0, x = <1.318646,1.266212,1.143832,1.193813>
 Iteration 1, x = <0.927974,0.933459,0.963690,0.948865>
@@ -169,16 +169,18 @@ Finally, we generated a diagonally dominant, symmetric matrix as follows
 0.134226        0.344439        4.943948        0.232431
 0.501243        0.176906        0.232431        4.698243
 ```
-Since it was diagonlly dominant, the Jacobi Iteration finds an approximation to the solution
+Since it was diagonally dominant, the Jacobi Iteration finds an approximation to the solution
 ```
 Iteration 0, x = <1.318646,1.067928,1.033630,0.961783>
 Iteration 1, x = <0.992393,1.000072,1.001998,1.000710>
 Iteration 2, x = <0.999837,0.999844,0.999982,1.000024>
 Iteration 3, x = <1.000023,0.999997,0.999998,0.999998>
 ```
-It is important to note that for the diagonally dominant matricies, that the Gauss-Seidel method converged in less iteriterations, 3 iterations compared to 5 for the diagonally dominate matrix and 3 iterations compared to 6 for the symmetric diagonally dominant.
+It is important to note that for diagonally dominant matrices, that the Gauss-Seidel method converged in less iteriterations, 3 iterations compared to 5 for the diagonally dominant matrix and 3 iterations compared to 6 for the symmetric diagonally dominant.
 
 # Task 10 (not done)
 Search the internet for sites that document the use of Jacobi iteration and/or Gauss-Seidel. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 
 ## Solution
+
+

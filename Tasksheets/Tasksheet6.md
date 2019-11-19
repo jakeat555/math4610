@@ -106,7 +106,7 @@ Iteration 3, x = <0.995681,0.996082,0.997850,0.997010>
 Iteration 4, x = <1.001078,1.000931,1.000531,1.000715>
 Iteration 5, x = <0.999743,0.999769,0.999872,0.999824>
 ```
-# Task 8 (not done)
+# Task 8
 Implement the Gauss-Seidel method for solving linear systems of equations. Include a software manual page for this method.
 
 ## Solution
@@ -116,6 +116,67 @@ Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/
 Run the Gauss-Seidel iteration on the same matrices as you created in Task 7. Compare the results of the Jacobi iteration runs to the Gauss-Seidel runs. This means keeping track of the number of iterations for each method.
 
 ## Solution
+We started with a `4x4` square matrix, which was generated from previous work.
+```
+0.390032        0.967939        0.173655        0.453616
+0.087746        0.636831        0.696883        0.192656
+0.756080        0.955597        0.816563        0.643773
+0.982609        0.504067        0.813204        0.218103
+```
+Note how this is not diagonally dominant, so the Jacobi Iteration is not expected to succeed. And it doesn't. It quickly diverges.
+```
+Iteration 0, x = <5.089946,1.833286,-2.973777,-4.535727>
+Iteration 1, x = <7.139471,6.177252,-6.379157,-11.111807>
+Iteration 2, x = <5.523405,12.115839,-6.647988,-16.553595>
+Iteration 3, x = <-2.765721,15.198406,1.710003,-17.496280>
+Iteration 4, x = <-13.040587,7.753182,20.679917,-24.728379>
+Iteration 5, x = <5.401230,-13.358697,34.012372,-108.731346>
+```
+
+Next was a `4x4` matrix from my diagonally dominant matrix, which was
+```
+4.000000        0.690001        0.505418        0.591491
+0.554785        4.378429        0.257732        0.207382
+0.626262        0.340127        4.843852        0.068778
+0.409907        0.879994        0.319480        4.980568
+```
+This is clearly diagonally dominant (or else I am doing something wrong) and this is shown by the Jacobi Iteration converging to 1
+```
+Iteration 0, x = <1.446727,1.049624,0.952957,0.957483>
+Iteration 1, x = <1.003671,1.004318,0.999826,0.998946>
+Iteration 2, x = <0.999433,1.000132,1.000079,1.000018>
+Iteration 3, x = <0.999965,0.999999,1.000004,1.000003>
+```
+
+Then was a `4x4` symmetric matrix generated as such
+```
+0.390032        0.967939        0.173655        0.453616
+0.967939        0.087746        0.636831        0.696883
+0.173655        0.636831        0.192656        0.756080
+0.453616        0.696883        0.756080        0.955597
+```
+Since it is not diagonally dominant, then we expect the Jaocbi to fail. As it does
+```
+Iteration 0, x = <5.089946,-28.917087,100.129893,-57.556782>
+Iteration 1, x = <99.211959,-1336.781187,4564.362392,-2680.612214>
+Iteration 2, x = <4407.977104,-60434.868102,206325.506231,-121263.695188>
+```
+
+Finally, we generated a diagonally dominant, symmetric matrix as follows
+```
+4.118048        0.676730        0.134226        0.501243
+0.676730        4.500454        0.344439        0.176906
+0.134226        0.344439        4.943948        0.232431
+0.501243        0.176906        0.232431        4.698243
+```
+Since it was diagonlly dominant, the Jacobi Iteration finds an approximation to the solution
+```
+Iteration 0, x = <1.318646,1.067928,1.033630,0.961783>
+Iteration 1, x = <0.992393,1.000072,1.001998,1.000710>
+Iteration 2, x = <0.999837,0.999844,0.999982,1.000024>
+Iteration 3, x = <1.000023,0.999997,0.999998,0.999998>
+```
+It is important to note that for the diagonally dominant matricies, that the Gauss-Seidel method converged in less iteriterations, 3 iterations compared to 5 for the diagonally dominate matrix and 3 iterations compared to 6 for the symmetric diagonally dominant.
 
 # Task 10 (not done)
 Search the internet for sites that document the use of Jacobi iteration and/or Gauss-Seidel. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.

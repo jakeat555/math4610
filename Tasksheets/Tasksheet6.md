@@ -178,11 +178,11 @@ Iteration 3, x = <1.000023,0.999997,0.999998,0.999998>
 ```
 It is important to note that for diagonally dominant matrices, that the Gauss-Seidel method converged in less iteriterations, 3 iterations compared to 5 for the diagonally dominant matrix and 3 iterations compared to 6 for the symmetric diagonally dominant.
 
-# Task 10 (not done)
+# Task 10
 Search the internet for sites that document the use of Jacobi iteration and/or Gauss-Seidel. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 
 ## Solution
-These websites outline the key diffrences between Gauss-Seidel and Jacobi iteritve methods. In in them, it shows the reasonoing behind calling the Jacobi the method of *simultaneous* displacement and the Gauss-Seidel as the method of *successive* displacement. This lead to a good understanding of the diffrences, as the Jacobi method can use each element of the previous approximation at the same time. The Gauss-Seidel is successive as it will use all previous approximations, not just the most recently calculated one.
+These websites outline the key differences between Gauss-Seidel and Jacobi iterative methods. In them, it shows the reasoning behind calling the Jacobi the method of *simultaneous* displacement and the Gauss-Seidel as the method of *successive* displacement. This lead to a good understanding of the differences, as the Jacobi method can use each element of the previous approximation at the same time. The Gauss-Seidel is successive as it will use all previous approximations, not just the most recently calculated one.
 
 http://www.netlib.org/linalg/old_html_templates/subsection2.6.2.1.html
 http://www.netlib.org/linalg/old_html_templates/subsection2.6.2.2.html

@@ -112,7 +112,7 @@ Implement the Gauss-Seidel method for solving linear systems of equations. Inclu
 ## Solution
 Check out the solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/gaussSeidel.md)
 
-# Task 9 (not done)
+# Task 9
 Run the Gauss-Seidel iteration on the same matrices as you created in Task 7. Compare the results of the Jacobi iteration runs to the Gauss-Seidel runs. This means keeping track of the number of iterations for each method.
 
 ## Solution

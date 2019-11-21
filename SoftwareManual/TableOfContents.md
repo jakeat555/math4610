@@ -63,6 +63,10 @@
 
 [choleskyFactor](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/choleskyFactor.md) - Cholesky Factorization
 
+[triDiagMultiply](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/triDiagMultiply.md) - Tridagonal Matrix Multiply
+
+[pentaDiagMultiply](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/pentaDiagMultiply.md) - Pentadiagonal Matrix Multiply
+
 ## Solving Linear Systems
 
 [diagonal](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/diagonal.md) - Diagonal Coeffecient Matrix
@@ -78,6 +82,10 @@
 [jacobiIter](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/jacobiIter.md) - Jakobian Iteration Solver
 
 [gaussSeidel](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/gaussSeidel.md) - Gauss-Seidel Solver
+
+[steepestDescent](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/steepestDescent.md) - Steepest Descent Solver
+
+[conjGrad](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/conjGrad.md) - Conjugate Gradient Solver
 
 ## Generators
 

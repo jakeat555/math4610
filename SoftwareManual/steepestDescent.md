@@ -17,9 +17,9 @@ better
 
 **Description/Purpose:** This method uses the steepest descent method to solve a set of linear equations. This is implemented by finding and going perpendicular to the level curve that the current approximation is on.
 
-**Input:** 
+**Input:** As input, this function needs a matrix `A` and it's solution vector `b`.
 
-**Output:** 
+**Output:** This method will output a solution vector `x` that satisfies `Ax=b` within a tolerance level.
 
 **Usage/Example:**
 

@@ -1,8 +1,8 @@
-# Task 1 (not done)
+# Task 1
 Implement the Method of Steepest Descent for solving linear systems of equations. Put an entry in your software manual that documents the method. Include an example using the diagonally dominant matrix generation routine from the previous tasksheet.
 
 ## Solution
-Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/steepestDescent.md)
+Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/steepestDescent.md) with the usage/example using the previously made matrix generation.
 
 # Task 2 (not done)
 Tryout your steepest descent method on a sequence of matrices based on the Hilbert matrix. Start with `n=4` and see how far you can go increasing `n`.

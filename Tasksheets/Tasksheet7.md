@@ -10,7 +10,7 @@ Tryout your steepest descent method on a sequence of matrices based on the Hilbe
 ## Solution
 
 
-# Task 3 (not done)
+# Task 3
 Implement the Conjugate Gradient method for solving linear systems of equations. Keep in mind that you will need to test the method on a symmetric, positive definite matrix. Create and include a software page for the conjugate gradient method in your software manual.
 
 ## Solution

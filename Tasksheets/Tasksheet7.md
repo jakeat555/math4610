@@ -41,13 +41,13 @@ Gauss Seidel took 5 iterations and 4.940656E-324 seconds,       x = <1.108835,1.
 ```
 
 
-# Task 8  (not done)
+# Task 8
 Implement a matrix multiplication routine for a tridiagonal matrix that avoids as many computations with zeros as possible. Use the vector form of matrix storage to store the three nonzero diagonals. Create a software manual page for the method.
 
 ## Solution
 Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/triDiagMultiply.md)
 
-# Task 9 (not done)
+# Task 9
 Create an analogous routine where the matrix is penta-diagonal with two diagonals above and below the main diagonal of the matrix. Use 5 vectors to store the matrix. As always, document the method in your software manual.
 
 ## Solution

@@ -16,28 +16,29 @@ Implement the Conjugate Gradient method for solving linear systems of equations.
 ## Solution
 Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/conjGrad.md)
 
-# Task 4 (not done)
+# Tasks 4, 5, 6 and 7
 As a test of the steepest descent method versus the conjugate gradient method, write code to do the following. First, generate a square symmetric diagonally dominant matrix - you have already created such a method. Then report the number of iterations required to produce a solution to the linear system. Generate the right hand side of the system of equations using `b=Av` where all the entries of `v`are 1.
 
 ## Solution
-
-
-# Task 5 (not done)
-Compare your results in Task 4 to the use of Gaussian Elimination with backsubstitution. Report the amount of time it takes to compute the solution of the linear system for steepest descent, the conjugate gradient method, and Gaussian elimination.
-
-## Solution
-
-
-# Task 6 (not done)
-Repeat the work in Task 5 but use Jacobi iteration instead of Gaussian elimination. Again, which runs faster.
-
-## Solution
-
-
-# Task 7 (not done)
-Repeat Task 6 using Gauss-Seidel instead of Jacobi Iteration.
-
-## Solution
+All the methods were ran with the symmetirc diagonally dominant matrix
+```
+A = 4.671180  0.334231  0.832065  0.734267
+	  0.334231  4.759315  0.296214  0.945615
+		0.832065  0.296214  4.319090  0.054229
+		0.734267  0.945615  0.054229  4.724074
+```
+and the solution vector `b=Av` where all entries of `v` are 1 
+```
+b = 6.571743, 6.335375 ,5.501598, 6.458185
+```
+This produces the results as follows
+```
+Steepest Descent took 7 iterations and 4.822081E-321 seconds,   x = <1.000000,1.000000,1.000000,1.000000>
+Conjugate Grading took 4 iterations and 4.940656E-324 seconds,  x = <1.000000,1.000000,1.000000,1.000000>
+GaussianElim took 0.000000E+00 seconds,                         x = <1.000000,1.000000,1.000000,1.000000>
+Jacobi Iteration took 10 iterations and 4.940656E-324 seconds,  x = <1.108816,1.005319,0.710265,0.633511>
+Gauss Seidel took 5 iterations and 4.940656E-324 seconds,       x = <1.108835,1.005341,0.710273,0.633524>
+```
 
 
 # Task 8  (not done)

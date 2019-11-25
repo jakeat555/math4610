@@ -20,7 +20,7 @@ Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/S
 As a test of the steepest descent method versus the conjugate gradient method, write code to do the following. First, generate a square symmetric diagonally dominant matrix - you have already created such a method. Then report the number of iterations required to produce a solution to the linear system. Generate the right hand side of the system of equations using `b=Av` where all the entries of `v`are 1.
 
 ## Solution
-All the methods were ran with the symmetirc diagonally dominant matrix
+All the methods were ran with the symmetric diagonally dominant matrix
 ```
 A = 4.671180  0.334231  0.832065  0.734267
 	  0.334231  4.759315  0.296214  0.945615
@@ -57,4 +57,6 @@ Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/S
 10 Search the internet for sites that document the use of conjugate gradient methods. Write a brief paragraph (3 or 4 sentences) that describe your findings. Include links to the sites you cite.
 
 ## Solution
+This source talks about the theory behind why conjugate gradient methods work. It explores finding the solution to our system of equations as finding the minimum value of an augmented formula. The minimum value is found with successive approximations of the minimum value of Krylov subspaces. It also talks about the computing time/ complexity of the conjugate gradient method.
 
+http://www.seas.ucla.edu/~vandenbe/236C/lectures/cg.pdf

@@ -96,3 +96,11 @@
 [generateSymmetric](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetric.md) - Random Symmetric Matrix Generator
 
 [generateSymmetricDiagDom](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/generateSymmetricDiagDom.md) - Random Symmetric Diagonal Dominant Matrix Generator
+
+## Eigen Values
+
+[powerIter](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/powerIter.md) - Power Iteration
+
+[invPowerIter](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/invPowerIter.md) - Inverse Power Iteration
+
+[powerIterShift](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/powerIterShift.md) - Power Iteration with Shift

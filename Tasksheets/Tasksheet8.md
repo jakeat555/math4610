@@ -1,8 +1,8 @@
-# Task 1 (not done)
+# Task 1
 Write code that implements the power method for finding the largest eigenvalue in magnitude of a square matrix. Document the method in your software manual page. Use a symmetric diagonally dominant matrix to test the method and include the results as an example in your software manual.
 
 ## Solution
-
+Check out my solution [here](https://github.com/jakeat555/math4610/blob/master/SoftwareManual/powerIter.md).
 # Task 2
 Try out your power method on the Hilbert matrix of order `n=10`.
 

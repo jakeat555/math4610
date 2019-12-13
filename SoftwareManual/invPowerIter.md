@@ -67,8 +67,6 @@ void invPowerIter(double A[], double y[], double tol, int maxIter, int n){
 		}
 		
 		//3.
-		// lambdaNew = v_{k+1}^TAv_{k+1} maybe? from class
-		//LUSolve(A,v,y,n);
 		for(int i=0; i<n; i++){
 			y[i] = 0.0;
 			for(int j=0; j<n; j++){

@@ -85,7 +85,7 @@ void invPowerShiftIter(double A[], double y[], double shift, double tol, int max
 			norm += (y[i] - theta*v[i]) * (y[i] - theta*v[i]);
 		}
 		error = sqrt(norm);
-		printf("  Iter %d, Eigen value: %f error: %f\n",iter,theta, error);
+		printf("  Iter %d, Eigen value: %f error: %f\n",iter,1/theta, error);
 		iter++;
 	}
 	for(int i=0; i<n; i++){

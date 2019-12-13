@@ -93,5 +93,7 @@ Search the internet for sites that document the use of Power iteration and/or In
 These sites lay out the fundamentals of the power method, inverse power method, and inverse power with shift. They explain the minimal changes between each method. A thing that we really liked about these sites was that the showed that it is only the computation of the approximate eigen vector that changes across each method. We also found that the simplicity of the program comes at a cost of slow convergence. Interestingly, these kinds of methods are employed by Google in ranking how valid websites are to a query.
 
 https://en.wikipedia.org/wiki/Power_iteration
+
 http://www.netlib.org/utk/people/JackDongarra/etemplates/node95.html
+
 http://www.netlib.org/utk/people/JackDongarra/etemplates/node96.html
